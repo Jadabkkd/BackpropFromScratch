@@ -28,7 +28,8 @@ def one_hot_encoding_csv(csvf:str, classes:int, index_label:int, index_from_zero
 
     return {
         'classes':classes,
+        'input_shape': data_array.shape[1],
         'data': data_array,
-        'one_hot_arr': one_hot_arr
+        'labels': one_hot_arr
     }
         
